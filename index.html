@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chromatic Concepts</title>
+    <title>Chromatic Concepts - Professional Painting Services</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/css/main.css">
@@ -11,9 +11,9 @@
 </head>
 <body>
     <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Chromatic Concepts</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Chromatic Concepts</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,10 +23,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -37,57 +40,164 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section bg-primary text-white py-5 section-gradient" >
+    <section class="hero-section section-gradient py-5" style="min-height: 90vh; display: flex; align-items: center;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4 fw-bold mb-4">Welcome to Chromatic Concepts</h1>
-                    <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="d-flex gap-3 justify-content-center flex-wrap">
-                        <a href="#" class="btn btn-light btn-lg">Get Started</a>
-                        <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                <div class="col-lg-8 mx-auto">
+                    <div class="dark-overlay text-center text-white">
+                        <h1 class="display-3 fw-bold mb-4">Chromatic Concepts</h1>
+                        <p class="lead mb-4 fs-4">Extend your inner color to your environment. Transform your space with colors that reflect who you are.</p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                            <a href="#" class="btn btn-light btn-lg px-4">Get a Quote</a>
+                            <a href="#" class="btn btn-outline-light btn-lg px-4">View Our Work</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 2 -->
-    <section class="py-5 bg-light section-gradient" data-offset="40">
+    <!-- Features Section -->
+    <section class="py-5 section-light">
         <div class="container">
-            <h2 class="mb-4">Section 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3">Our Services</h2>
+                    <p class="lead text-muted">Bringing your inner colors to life through expert painting and color consultation</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                                    <path d="M12 2.69v6.63"></path>
+                                </svg>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Color Consultation</h3>
+                            <p class="text-muted">Discover the colors that resonate with your personality and bring them into your living space with expert guidance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <path d="M9 9h6v6H9z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Interior Painting</h3>
+                            <p class="text-muted">Transform your home with precision painting that reflects your unique style and creates the atmosphere you desire.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Exterior Painting</h3>
+                            <p class="text-muted">Extend your inner color outward, making your home's exterior a true reflection of your personality and style.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Section 3 -->
-    <section class="py-5 section-gradient" data-offset="80">
-        <div class="container ">
-            <h2 class="mb-4">Section 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-        </div>
-    </section>
-
-    <!-- Section 4 -->
-    <section class="py-5 bg-light">
+    <!-- Showcase Section -->
+    <section class="py-5 section-gradient" data-offset="60">
         <div class="container">
-            <h2 class="mb-4">Section 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="dark-overlay text-white">
+                        <h2 class="display-5 fw-bold mb-4">Your Inner Color, Your Space</h2>
+                        <p class="lead mb-4">Every person has a unique color palette within them. We help you discover and extend those colors into your environment, creating spaces that truly reflect who you are.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2" style="vertical-align: middle;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Personalized color matching
+                            </li>
+                            <li class="mb-3">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2" style="vertical-align: middle;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Premium quality paints
+                            </li>
+                            <li class="mb-3">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2" style="vertical-align: middle;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Expert craftsmanship
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dark-overlay text-white">
+                        <h3 class="h5 fw-bold mb-3">Free Color Consultation</h3>
+                        <p class="mb-4 opacity-75">Let's discover the colors that speak to you and create a space that's uniquely yours.</p>
+                        <a href="#" class="btn btn-light btn-lg w-100">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Section 5 -->
-    <section class="py-5">
+    <!-- Stats Section -->
+    <section class="py-5 section-light">
         <div class="container">
-            <h2 class="mb-4">Section 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h3 class="display-4 fw-bold text-primary mb-2">500+</h3>
+                        <p class="text-muted mb-0">Homes Transformed</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h3 class="display-4 fw-bold text-primary mb-2">15+</h3>
+                        <p class="text-muted mb-0">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h3 class="display-4 fw-bold text-primary mb-2">360°</h3>
+                        <p class="text-muted mb-0">Color Spectrum</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h3 class="display-4 fw-bold text-primary mb-2">100%</h3>
+                        <p class="text-muted mb-0">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Extend Your Inner Color?</h2>
+                    <p class="lead text-muted mb-4">Let's bring your unique colors to life. Transform your space into a reflection of who you are.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#" class="btn btn-primary btn-lg px-5">Get Free Quote</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg px-5">View Gallery</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
+        
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="js/colour_logic.js"></script>
