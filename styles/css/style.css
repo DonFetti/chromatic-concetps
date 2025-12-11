@@ -3,6 +3,7 @@
   --hue-window: 20;
   --saturation: 60%;
   --lightness: 35%;
+  --border-hue: var(--hue-base);
 }
 
 .section-gradient {
@@ -16,13 +17,53 @@
 }
 
 .dark-overlay {
-  background: rgba(54, 57, 63, 0.85);
+  --glow-hue: var(--border-hue);
+  background: linear-gradient(135deg, hsla(var(--border-hue), var(--saturation), var(--lightness), 0.15), hsla(calc(var(--border-hue) + var(--hue-window)), var(--saturation), var(--lightness), 0.1));
   border-radius: 1.5rem;
   padding: 4rem;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.15);
+  border: 2px solid hsl(var(--border-hue), var(--saturation), var(--lightness));
+  transition: border-color 0.25s linear, background 0.25s linear;
+  position: relative;
+  overflow: hidden;
+}
+.dark-overlay::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, hsla(var(--glow-hue), var(--saturation), calc(var(--lightness) + 20%), 0.2) 0%, transparent 70%);
+  pointer-events: none;
+  transition: background 0.25s linear;
+}
+
+.dark-overlay .btn {
+  transition: border-color 0.25s linear, transform 0.3s ease, background-color 0.3s ease;
+  border: 2px solid hsl(var(--border-hue), var(--saturation), var(--lightness));
+}
+.dark-overlay .btn.btn-light {
+  color: white;
+}
+.dark-overlay .btn.btn-light:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+}
+.dark-overlay .btn.btn-outline-light {
+  background-color: transparent;
+  color: white;
+}
+.dark-overlay .btn.btn-outline-light:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.section-dark {
+  background: #2f3136;
+  color: white;
 }
 
 .card {
@@ -46,30 +87,4 @@ html {
 
 .navbar {
   transition: background 0.3s ease;
-}
-
-.hero-section {
-  position: relative;
-  overflow: hidden;
-}
-.hero-section .hero-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-  width: 90%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  opacity: 0.9;
-}
-@media screen and (max-width: 768px) {
-  .hero-section .hero-image {
-    display: none;
-  }
-}
-.hero-section .container {
-  position: relative;
-  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
