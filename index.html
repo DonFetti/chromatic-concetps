@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chromatic Concepts - Professional Painting Services</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/css/main.css">
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
@@ -40,7 +38,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section section-gradient py-5" style="min-height: 90vh; display: flex; align-items: center;">
+    <section class="hero-section section-gradient py-5" style="min-height: 90vh; display: flex; align-items: flex-end;">
+        <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80');"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8 mx-auto">
@@ -58,55 +57,49 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-5 section-light">
+    <section class="py-5 section-gradient" data-offset="20">
         <div class="container">
             <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-8 mx-auto text-white">
                     <h2 class="display-5 fw-bold mb-3">Our Services</h2>
-                    <p class="lead text-muted">Bringing your inner colors to life through expert painting and color consultation</p>
+                    <p class="lead opacity-90">Bringing your inner colors to life through expert painting and color consultation</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="mb-3">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
-                                    <path d="M12 2.69v6.63"></path>
-                                </svg>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">Color Consultation</h3>
-                            <p class="text-muted">Discover the colors that resonate with your personality and bring them into your living space with expert guidance.</p>
+                    <div class="dark-overlay h-100 text-white">
+                        <div class="mb-3">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                                <path d="M12 2.69v6.63"></path>
+                            </svg>
                         </div>
+                        <h3 class="h5 fw-bold mb-3">Color Consultation</h3>
+                        <p class="opacity-90">Discover the colors that resonate with your personality and bring them into your living space with expert guidance.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="mb-3">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <path d="M9 9h6v6H9z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">Interior Painting</h3>
-                            <p class="text-muted">Transform your home with precision painting that reflects your unique style and creates the atmosphere you desire.</p>
+                    <div class="dark-overlay h-100 text-white">
+                        <div class="mb-3">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <path d="M9 9h6v6H9z"></path>
+                            </svg>
                         </div>
+                        <h3 class="h5 fw-bold mb-3">Interior Painting</h3>
+                        <p class="opacity-90">Transform your home with precision painting that reflects your unique style and creates the atmosphere you desire.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="mb-3">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                </svg>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">Exterior Painting</h3>
-                            <p class="text-muted">Extend your inner color outward, making your home's exterior a true reflection of your personality and style.</p>
+                    <div class="dark-overlay h-100 text-white">
+                        <div class="mb-3">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
                         </div>
+                        <h3 class="h5 fw-bold mb-3">Exterior Painting</h3>
+                        <p class="opacity-90">Extend your inner color outward, making your home's exterior a true reflection of your personality and style.</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +107,7 @@
     </section>
 
     <!-- Showcase Section -->
-    <section class="py-5 section-gradient" data-offset="60">
+    <section class="py-5 section-gradient" data-offset="40">
         <div class="container">
             <div class="row align-items-center g-4">
                 <div class="col-lg-6 mb-4 mb-lg-0">
@@ -155,49 +148,53 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-5 section-light">
+    <section class="py-5 section-gradient" data-offset="60">
         <div class="container">
-            <div class="row g-4 text-center">
+            <div class="row g-4 text-center text-white">
                 <div class="col-md-3">
                     <div class="p-4">
-                        <h3 class="display-4 fw-bold text-primary mb-2">500+</h3>
-                        <p class="text-muted mb-0">Homes Transformed</p>
+                        <h3 class="display-4 fw-bold mb-2">500+</h3>
+                        <p class="opacity-90 mb-0">Homes Transformed</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4">
-                        <h3 class="display-4 fw-bold text-primary mb-2">15+</h3>
-                        <p class="text-muted mb-0">Years Experience</p>
+                        <h3 class="display-4 fw-bold mb-2">15+</h3>
+                        <p class="opacity-90 mb-0">Years Experience</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4">
-                        <h3 class="display-4 fw-bold text-primary mb-2">360°</h3>
-                        <p class="text-muted mb-0">Color Spectrum</p>
+                        <h3 class="display-4 fw-bold mb-2">360°</h3>
+                        <p class="opacity-90 mb-0">Color Spectrum</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4">
-                        <h3 class="display-4 fw-bold text-primary mb-2">100%</h3>
-                        <p class="text-muted mb-0">Satisfaction Rate</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-5 fw-bold mb-4">Ready to Extend Your Inner Color?</h2>
-                    <p class="lead text-muted mb-4">Let's bring your unique colors to life. Transform your space into a reflection of who you are.</p>
-                    <div class="d-flex gap-3 justify-content-center flex-wrap">
-                        <a href="#" class="btn btn-primary btn-lg px-5">Get Free Quote</a>
-                        <a href="#" class="btn btn-outline-primary btn-lg px-5">View Gallery</a>
+                        <h3 class="display-4 fw-bold mb-2">100%</h3>
+                        <p class="opacity-90 mb-0">Satisfaction Rate</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-        
+
+    <!-- CTA Section -->
+    <section class="py-5 section-gradient" data-offset="80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Extend Your Inner Color?</h2>
+                    <p class="lead opacity-90 mb-4">Let's bring your unique colors to life. Transform your space into a reflection of who you are.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#" class="btn btn-light btn-lg px-5">Get Free Quote</a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-5">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="js/colour_logic.js"></script>
