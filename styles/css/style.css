@@ -1,1 +1,20 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --hue-base: 240;
+  --hue-window: 40;
+  --saturation: 70%;
+  --lightness: 35%;
+}
+
+.section-gradient {
+  background: linear-gradient(to bottom, hsl(var(--hue-base), var(--saturation), var(--lightness)), hsl(calc(var(--hue-base) + var(--hue-window)), var(--saturation), var(--lightness)));
+  transition: background 0.25s linear;
+  color: white;
+}
+
+.section-gradient[data-offset] {
+  background: linear-gradient(to bottom, hsl(calc(var(--hue-base) + attr(data-offset number)), var(--saturation), var(--lightness)), hsl(calc(var(--hue-base) + attr(data-offset number) + var(--hue-window)), var(--saturation), var(--lightness)));
+}
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */

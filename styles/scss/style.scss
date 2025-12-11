@@ -1,0 +1,36 @@
+// 1) Bootstrap variable overrides BEFORE import
+// (Optional if you want a default hue)
+
+
+// 3) Define global CSS variables used by JS
+:root {
+    --hue-base: 240;
+    --hue-window: 40;
+    --saturation: 70%;
+    --lightness: 35%;
+  }
+  
+//   4) Gradient section styling
+  .section-gradient {
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--hue-base), var(--saturation), var(--lightness)),
+      hsl(calc(var(--hue-base) + var(--hue-window)), var(--saturation), var(--lightness))
+    );
+    transition: background 0.25s linear;
+    color: white;
+  }
+  
+  // Optional: offset-based gradients (per element variation)
+  .section-gradient[data-offset] {
+    background: linear-gradient(
+      to bottom,
+      hsl(calc(var(--hue-base) + attr(data-offset number)), var(--saturation), var(--lightness)),
+      hsl(calc(var(--hue-base) + attr(data-offset number) + var(--hue-window)), var(--saturation), var(--lightness))
+    );
+  }
+  
+  // Dark low opacity background for divs
+  .dark-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
