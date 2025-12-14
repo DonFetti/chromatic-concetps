@@ -12,24 +12,24 @@
   }
   
 //   4) Gradient section styling
-  .section-gradient {
-    background: linear-gradient(
-      to bottom,
-      hsl(var(--hue-base), var(--saturation), var(--lightness)),
-      hsl(calc(var(--hue-base) + var(--hue-window)), var(--saturation), var(--lightness))
-    );
-    transition: background 0.25s linear;
-    color: white;
-  }
+  // .section-gradient {
+  //   background: linear-gradient(
+  //     to bottom,
+  //     hsl(var(--hue-base), var(--saturation), var(--lightness)),
+  //     hsl(calc(var(--hue-base) + var(--hue-window)), var(--saturation), var(--lightness))
+  //   );
+  //   transition: background 0.25s linear;
+  //   color: white;
+  // }
   
-  // Optional: offset-based gradients (per element variation)
-  .section-gradient[data-offset] {
-    background: linear-gradient(
-      to bottom,
-      hsl(calc(var(--hue-base) + attr(data-offset number)), var(--saturation), var(--lightness)),
-      hsl(calc(var(--hue-base) + attr(data-offset number) + var(--hue-window)), var(--saturation), var(--lightness))
-    );
-  }
+  // // Optional: offset-based gradients (per element variation)
+  // .section-gradient[data-offset] {
+  //   background: linear-gradient(
+  //     to bottom,
+  //     hsl(calc(var(--hue-base) + attr(data-offset number)), var(--saturation), var(--lightness)),
+  //     hsl(calc(var(--hue-base) + attr(data-offset number) + var(--hue-window)), var(--saturation), var(--lightness))
+  //   );
+  // }
 
   
   // Keyframe animation for living glow effect
@@ -53,7 +53,7 @@
   }
 
   // Dark low opacity background for divs - floating bubble reflection style
-  .dark-overlay {
+  @mixin dark-overlay-styles {
     --glow-hue: var(--border-hue);
     background: linear-gradient(
       135deg,
