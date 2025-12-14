@@ -51,10 +51,12 @@
   transform-origin: center center;
 }
 .dark-overlay:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out, -webkit-backdrop-filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, -webkit-backdrop-filter 0.3s ease-in-out;
 }
 
 .dark-overlay .btn {
