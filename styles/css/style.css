@@ -6,16 +6,6 @@
   --border-hue: var(--hue-base);
 }
 
-.section-gradient {
-  background: linear-gradient(to bottom, hsl(var(--hue-base), var(--saturation), var(--lightness)), hsl(calc(var(--hue-base) + var(--hue-window)), var(--saturation), var(--lightness)));
-  transition: background 0.25s linear;
-  color: white;
-}
-
-.section-gradient[data-offset] {
-  background: linear-gradient(to bottom, hsl(calc(var(--hue-base) + attr(data-offset number)), var(--saturation), var(--lightness)), hsl(calc(var(--hue-base) + attr(data-offset number) + var(--hue-window)), var(--saturation), var(--lightness)));
-}
-
 @keyframes glowPulse {
   0%, 100% {
     opacity: 0.2;
@@ -39,8 +29,8 @@
   background: linear-gradient(135deg, hsla(var(--border-hue), var(--saturation), var(--lightness), 0.15), hsla(calc(var(--border-hue) + var(--hue-window)), var(--saturation), var(--lightness), 0.1));
   border-radius: 1.5rem;
   padding: 4rem;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   border: 2px solid hsl(var(--border-hue), var(--saturation), var(--lightness));
   transition: border-color 0.25s linear, background 0.25s linear;
@@ -59,6 +49,12 @@
   transition: background 0.25s linear;
   animation: glowPulse 8s ease-in-out infinite;
   transform-origin: center center;
+}
+.dark-overlay:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .dark-overlay .btn {
@@ -107,4 +103,8 @@ html {
 
 .navbar {
   transition: background 0.3s ease;
+}
+
+.translate-full-y {
+  transform: translateY(-105%) translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
